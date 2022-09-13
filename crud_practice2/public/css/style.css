@@ -1,0 +1,19 @@
+
+label
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
+td
+{
+    color:black;
+}
+.focus
+{
+    width: 90%;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px  lightcoral inset,-1px -1px 8px 1px  lightblue inset;
+    padding:10px;
+    
+}

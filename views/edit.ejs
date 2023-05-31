@@ -1,0 +1,29 @@
+<%-include("./partials/header.ejs")%>
+   <div class="container mt-5">
+        <h2 class="alert alert-primary w-50">Update a Student</h2>
+       
+            <form method="post" action="/student/update/<%=data._id%>">
+                
+                <div class="mb-3">
+                    <label class="form-label">Name:</label><br>
+                    <input type="text" class="focus w-50" name="name" autocomplete="off" autofocus required value="<%=data.name%>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Age:</label><br>
+                    <input type="text" class="focus w-50" name="age" autocomplete="off" required value="<%=data.age%>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Game:</label><br>
+                    <input type="text" class="focus w-50" name="game" autocomplete="off" required value="<%=data.game%>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Rating:</label><br>
+                    <input type="text" class="focus w-50" name="rating" autocomplete="off" required value="<%=data.rating%>">
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-secondary">Home</button>
+            </form>
+        </div>
+
+   </div>
+<%-include("./partials/footer.ejs")%>
